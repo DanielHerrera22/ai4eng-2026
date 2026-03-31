@@ -1,4 +1,5 @@
-La Pregunta "Imagina que tienes una tabla con datos puramente numéricos de casas (como metros cuadrados y número de habitaciones) y quieres predecir su precio. Escribe una función en Python que tome estos datos, divida el conjunto en datos de entrenamiento y datos de prueba, entrene un modelo básico de Regresión Lineal (Linear Regression) y calcule el margen de error de sus predicciones."
+La Pregunta "Imagina que tienes una tabla con datos puramente numéricos de casas (como metros cuadrados y número de habitaciones) y quieres predecir su precio. 
+Escribe una función en Python que tome estos datos, divida el conjunto en datos de entrenamiento y datos de prueba, entrene un modelo básico de Regresión Lineal (Linear Regression) y calcule el margen de error de sus predicciones."
 
 Especificaciones de la Función Para resolver este reto más sencillo, la función debe diseñarse con la siguiente estructura:
 
