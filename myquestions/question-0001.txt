@@ -1,1 +1,17 @@
+La Pregunta "Imagina que tienes una tabla con datos puramente numéricos de casas (como metros cuadrados y número de habitaciones) y quieres predecir su precio. Escribe una función en Python que tome estos datos, divida el conjunto en datos de entrenamiento y datos de prueba, entrene un modelo básico de Regresión Lineal (Linear Regression) y calcule el margen de error de sus predicciones."
 
+Especificaciones de la Función Para resolver este reto más sencillo, la función debe diseñarse con la siguiente estructura:
+
+Nombre de la función: calcular_error_precio_casas
+
+Argumentos que debe recibir:
+
+X (pandas.DataFrame o numpy.ndarray): Las características numéricas de las casas (las variables predictoras).
+
+y (pandas.Series o numpy.ndarray): El precio real de cada casa (la variable objetivo).
+
+Tipo de dato que debe retornar: float
+
+Qué se espera que retorne explícitamente:
+
+La función debe retornar únicamente un número decimal (float) que represente el Error Cuadrático Medio (MSE, por sus siglas en inglés de Mean Squared Error) del modelo. Este error debe calcularse evaluando las predicciones del modelo sobre un conjunto de prueba estricto del 20% de los datos originales.
