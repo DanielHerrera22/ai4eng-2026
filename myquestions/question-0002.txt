@@ -1,4 +1,5 @@
-La Pregunta / El Reto de Negocio "Imagina que eres el analista de datos de un centro comercial. Tienes una tabla con los ingresos anuales y la puntuación de gasto de miles de clientes, pero no sabes cómo clasificarlos. Tu objetivo es descubrir grupos naturales entre ellos para lanzar campañas de marketing personalizadas. Escribe una función en Python que reciba estos datos, aplique el algoritmo K-Means para dividirlos en un número específico de grupos (clusters), y devuelva a qué grupo pertenece cada cliente junto con las coordenadas exactas del centro de cada grupo."
+La Pregunta / El Reto de Negocio "Imagina que eres el analista de datos de un centro comercial. Tienes una tabla con los ingresos anuales y la puntuación de gasto de miles de clientes, pero no sabes cómo clasificarlos.
+Tu objetivo es descubrir grupos naturales entre ellos para lanzar campañas de marketing personalizadas. Escribe una función en Python que reciba estos datos, aplique el algoritmo K-Means para dividirlos en un número específico de grupos (clusters), y devuelva a qué grupo pertenece cada cliente junto con las coordenadas exactas del centro de cada grupo."
 
 Especificaciones de la Función Para resolver este problema de segmentación, la función debe tener la siguiente estructura:
 
