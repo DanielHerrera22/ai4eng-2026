@@ -1,0 +1,20 @@
+La Pregunta / El Reto de Negocio "Imagina que trabajas en una planta de manufactura y tienes sensores en las máquinas que registran 50 variables numéricas diferentes (temperatura, presión, vibración, humedad, etc.) cada segundo.
+Quieres entrenar un modelo, pero 50 variables son demasiadas y tienen mucha información redundante. Escribe una función en Python que reciba este conjunto de datos, aplique el Análisis de Componentes Principales (PCA) para 'comprimir' las columnas, y devuelva el nuevo conjunto de datos garantizando que retenga un porcentaje específico de la información (varianza) original."
+
+Especificaciones de la Función Para resolver este reto de compresión de datos, la función debe estructurarse de la siguiente manera:
+
+Nombre de la función: reducir_dimensiones_pca
+
+Argumentos que debe recibir:
+
+X_escalado (pandas.DataFrame o numpy.ndarray): Los datos originales numéricos con todas las columnas (ej. las 50 variables de los sensores). Se asume que estos datos ya pasaron por un StandardScaler, ya que el algoritmo PCA es extremadamente sensible a las escalas de los datos.
+
+varianza_esperada (float): Un número decimal mayor a 0.0 y menor o igual a 1.0 que indica el porcentaje de información original que quieres conservar. Por ejemplo, 0.95 significa que quieres conservar el 95% de la varianza.
+
+Tipo de dato que debe retornar: tuple (conteniendo un numpy.ndarray y un int).
+
+Qué se espera que retorne explícitamente: La función debe retornar exactamente una tupla con dos elementos, estrictamente en este orden:
+
+Datos Transformados (numpy.ndarray): La nueva matriz de datos con las dimensiones reducidas. Es decir, el mismo número de filas originales, pero con muchas menos columnas (las cuales ahora se llaman "componentes principales").
+
+Número de Componentes (int): Un número entero que indique exactamente cuántas columnas (componentes) fueron necesarias para alcanzar la varianza_esperada que solicitaste. Por ejemplo, podría devolverte 12, indicando que solo necesitó 12 componentes nuevos para explicar el 95% de la información de las 50 variables originales.
