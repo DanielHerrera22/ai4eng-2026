@@ -1,0 +1,19 @@
+La Pregunta / El Reto de Negocio "Imagina que trabajas en el departamento de seguridad de un banco y tienes un conjunto de datos con miles de transacciones de tarjetas de crédito. 
+La gran mayoría son transacciones legítimas, pero una pequeña fracción son fraudes. Escribe una función en Python que reciba las características numéricas de estas transacciones y sus etiquetas (fraude o no fraude).
+La función debe inicializar un modelo de Regresión Logística (Logistic Regression) y evaluarlo utilizando validación cruzada estratificada (Stratified K-Fold) para garantizar que cada partición de prueba tenga la misma proporción de fraudes. Finalmente, debe devolver el rendimiento promedio del modelo basado en la métrica ROC-AUC."
+
+Especificaciones de la Función Para resolver este problema de detección de fraude, la función debe diseñarse con la siguiente estructura:
+
+Nombre de la función: evaluar_modelo_fraude_cv
+
+Argumentos que debe recibir:
+
+X (pandas.DataFrame o numpy.ndarray): Una matriz con las características numéricas de las transacciones (montos, ubicaciones codificadas, tiempos, etc.).
+
+y (pandas.Series o numpy.ndarray): Un arreglo unidimensional con las etiquetas binarias reales (0 para transacciones legítimas y 1 para fraudes).
+
+n_splits (int): El número de particiones (folds) que se realizarán en la validación cruzada (por ejemplo, 5).
+
+Tipo de dato que debe retornar: float
+
+Qué se espera que retorne explícitamente: La función debe retornar únicamente un número decimal (float) que represente el promedio de las puntuaciones ROC-AUC obtenidas en todas las particiones de la validación cruzada. Esta métrica (el Área Bajo la Curva ROC) es la ideal para este caso, ya que evalúa qué tan bien el modelo distingue entre las dos clases, sin importar que haya muy pocos casos de fraude.
