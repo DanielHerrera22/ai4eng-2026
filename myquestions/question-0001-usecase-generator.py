@@ -12,7 +12,6 @@ def generar_caso_de_uso_calcular_error_precio_casas():
     y = X @ coeficientes + ruido
 
     X_df = pd.DataFrame(X)
-    y_series = pd.Series(y)
 
     info = {
         "descripcion": "Cálculo de error en predicción de precios de casas",
@@ -20,4 +19,4 @@ def generar_caso_de_uso_calcular_error_precio_casas():
         "n_features": n_features
     }
 
-    return info, X_df, y_series
+    return info, X_df
