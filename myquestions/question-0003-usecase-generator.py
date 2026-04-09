@@ -1,17 +1,22 @@
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
 
 def generar_datos_sensores(n_muestras=500, n_variables=50):
-    # Generar datos aleatorios (simulando sensores)
     datos = np.random.randn(n_muestras, n_variables) * 10 + 50
+    return datos
 
-    # Escalar (muy importante para PCA)
-    scaler = StandardScaler()
-    datos_escalados = scaler.fit_transform(datos)
 
-    return datos_escalados  # numpy.ndarray
+def generar_caso_de_uso_reduccion_dimensionalidad():
+    datos = generar_datos_sensores()
 
-datos = generar_datos_sensores()
+    n_componentes = 10 
+    X_reducido = datos[:, :n_componentes]
 
-X_reducido, n_componentes = reducir_dimensiones_pca(datos, 0.95)
+    df_reducido = pd.DataFrame(X_reducido)
+
+    info = {
+        "descripcion": "Reducción de dimensionalidad en datos de sensores",
+        "n_componentes": n_componentes
+    }
+
+    return info, df_reducido
